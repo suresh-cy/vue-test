@@ -85,13 +85,3 @@ function check2(df,ary)
        }
    else  flames(cd,bc)      }
 
-var asd=[]
-
-for(oi=0;oi<3;oi++){
-  asd.push({})
-  
-  asd[oi].name="zuresh"
-  asd[oi].age=18
-};
-
-console.log(asd[1].name.slice(0,2))
