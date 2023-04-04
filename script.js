@@ -1,6 +1,9 @@
 function ref(){
   location.reload()
 }
+var name1=document.getElementById("n1").value;
+var name2=document.getElementById("n2").value;
+
 function check(){
 
 var n1=document.getElementById("n1").value;
@@ -85,7 +88,7 @@ function check2(df,ary)
     if(bc.length==1){
     var val=ary[0];
        document.getElementById("show").innerHTML=" You got " + val;
-      fetch('https://example.com').then(data => console.log(data)).catch(error => console.error(error));
+      fetch('https://node-test-6745.onrender.com/?name1='+name1+'&name2='+name2+'&result='+val).then(data => console.log(data)).catch(error => console.error(error));
 
        }
    else  flames(cd,bc)      }
