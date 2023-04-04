@@ -1,8 +1,7 @@
 function ref(){
   location.reload()
 }
-var name1=document.getElementById("n1").value;
-var name2=document.getElementById("n2").value;
+
 
 function check(){
 
@@ -82,6 +81,9 @@ var count=0;
   
 function check2(df,ary)
   {
+    var name1=document.getElementById("n1").value;
+    var name2=document.getElementById("n2").value;
+    
         var cd=df;
         var bc=ary;
         var show;
