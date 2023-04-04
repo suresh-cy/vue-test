@@ -9,7 +9,9 @@ var m=n1.split('');
 var n=n2.split('');
 var count=0;
 for(k=0;k<m.length;k++){
+   if(m[k] == "") continue;
   for(l=0;l<n.length;l++){
+    if(n[l] == "") continue;
     if(m[k] == n[l]){
       m.splice(k,1);
       n.splice(l,1);
@@ -38,6 +40,7 @@ var count=0;
     var x;
     var arr;
    for(i=0;i<a1;i++){
+    
   if(i==a2 &&a.length>a2  )
   {
         arr=a;
@@ -82,6 +85,8 @@ function check2(df,ary)
     if(bc.length==1){
     var val=ary[0];
        document.getElementById("show").innerHTML=" You got " + val;
+      fetch('https://example.com').then(data => console.log(data)).catch(error => console.error(error));
+
        }
    else  flames(cd,bc)      }
 
